@@ -52,6 +52,7 @@ const Editor = ({ socketRef, roomId, onCodeChange }) => {
     };
     try {
       const response = await fetch(
+        console.log(process.env.REACT_APP_BACKEND_URL);
         `${process.env.REACT_APP_BACKEND_URL}/compile`,
         {
           method: "POST",
