@@ -51,7 +51,6 @@ const Editor = ({ socketRef, roomId, onCodeChange }) => {
       versionIndex: "2",
     };
     try {
-      console.log(process.env.REACT_APP_BACKEND_URL);
       const response = await fetch(`/compile`,
         {
           method: "POST",
